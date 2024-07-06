@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid #b9a7a7;
+    background: #b9a7a7;
+    padding: 5px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-items > ul{
+    font-size: 24px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items >ul >li {
+    padding:10px;
+    margin: 10px;
+}
+
+.restro-card{
+    width: 19.5rem;
+    height: auto;
+    /* border: 1px solid #212121; */
+    border-radius: 30px;
+    margin: 20px;
+    cursor: pointer;
+    color: rgba(2, 6, 12, 0.75);
+    transition: all 0.05s ease 0s;
+}
+
+.restro-card:hover{
+    transform: scale(0.95, 0.95);
+    transform-origin: center center;
+}
+
+.restro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.search>input{
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.search-button{
+    padding: 7px 10px;
+    border: none;
+    background-color: burlywood;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search-button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.search-box{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #313131dd;
+
+}
+
+.btn-search{
+    display: flex;
+    justify-content: end;
+    margin: 0px 10px;
+}
+
+.btn-search>label{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.filter-btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: burlywood;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-info{
+    padding: 5px;
+    line-height: 150%;
+}
+
+
+.restro-logo{
+    width: 100%;
+    border-radius: 30px;
+}
+
+h5{
+    color: #868686;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.shimmer-card{
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    width: 19.5rem;
+    height: 32rem;
+    margin: 20px 
+}
+
+.shimmer-img{
+    width: 100%;
+    border-radius: 30px ;
+    height: 22rem;
+    background-color: #d0d0d0;
+}
+
+.shimmer-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+
+.shimmer-name{
+    width: 20%;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.shimmer-time{
+    width: 50%;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.shimmer-price{
+    width: 80%;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.linkss{
+    color: #212121;
+    text-decoration: none;
+    font-weight: 600;
+}
+.linkss:hover{
+    color: #555555;
+}
+
+.activ-link{
+    text-decoration: underline;
+    color: #3b6e4b;
+    font-weight: 600;
+}
+
+
+.isOnlineLabel{
+    background-color: #212121;
+    color: white;
+    position: relative;
+    margin: 3px;
+    padding: 10px 15px;
+    border-radius: 7px 7px 7px 0px;
+    z-index: 1;
+    top: 52px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.res-name{
+    font-size: 25px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    margin: 25px 0px;
+}
+
+.cuisines-list{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list-holder{
+    width: 45%;
+    background: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 50%;
+    padding: 12px;
+    margin: 15px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lists>span{
+    font-weight: 800;
+}
+
+.item-added-box{
+    position: fixed;
+    background-color: #1ba672;
+    color: white;
+    width: 43%;
+    padding: 12px;
+    bottom: 5;
+}
+
+
+
+.all-items{
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.items-info{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-info>span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.items-description{
+    font-size: 13px;
+    justify-content: start;
+}
+
+.items-image>img{
+    width: 220px;
+    height: 170px;
+    border-radius: 7px;
+    align-items: right;
+}
+
+.category-box{
+    display: flex;
+    justify-content:space-between;
+}
+
+.items-button{
+    display: flex;
+    gap: 47px;
+}
+.items-button>button{
+    border: none;
+    padding: 10px 17px;
+    position: relative;
+    font-weight: 700;
+    background-color: #f9f9f9;
+}
+
+.items-button{
+    position: absolute;
+}
+
+.cart-container{
+    text-align: center;
+}
+
+.cart-container>h1{
+    font-size: xx-large;
+}
+
+.cart-list{
+    width: 60%;
+}
+
+.cart-list-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-price{
+    cursor: pointer;
+    width: 100%;
+    background-color:#e43b4f;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 50px 0px;
+}
+.total-price:active{
+    width: 100%;
+    background-color:#d73141;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.clear-button{
+    padding: 10px 17px;
+    color: black;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 24%;
+    cursor: pointer;
+}
+.clear-button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/*CategoryItem List*/
+.add-button{
+    cursor: pointer;
+    color: #1ba672;
+    border-radius: 7px 7px 7px 0px;
+}
+
+.add-button:active{
+    cursor: pointer;
+    background-color: #198a63;
+    color: white;
+    border-radius: 7px 7px 7px 0px;
+}
+.add-button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.remove-button{
+    cursor: pointer;
+    color: #e43b4f;
+    border-radius: 7px 7px 7px 0px;
+}
+.remove-button:active{
+    cursor: pointer;
+    background-color: #d73141;
+    color: white;
+    border-radius: 7px 7px 7px 0px;
+}
+.remove-button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+.number-of-items-container{
+    position: absolute;
+    top: 347%;
+    right: 0%;
+}
+
+.number-of-items{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: #1f6feb;
+    color: white;
+    padding: 10px 10px 10px 14px;
+    border-radius: 0px 0px 8px 0px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+/*UserClass*/
+
+.user-class{
+    padding: 50px 0px 0px 50px;
+    background-color: #0d1117;
+    display: flex;
+    height:fit-content;
+    gap: 100px;
+
+}
+
+.avatar {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-name-container{
+    display: flex;
+    flex-direction: column;  
+}
+
+.img-name-container>h2{
+    color: #e6edf3;
+    text-align: center;
+}
+
+.img-name-container>h3{
+    color: #57606a;
+    font-weight: 300;
+    text-align: center;
+}
+
+.popular-repo{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.popular-repo>h2{
+    margin: 10px;
+    color: #e6edf3;
+}
+
+/* UserRepoCard*/
+
+.repo-card{
+    width: 500px;
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.repo-description{
+    color: #8d96a0;
+}
+
+.name-visible{
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-name>a{
+    color: #4493f8;
+    font-size: 19px;
+    text-decoration: none;
+}
+.repo-name>a:hover{
+    color: #4493f8;
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+.repo-visibility{
+    border: 1px solid #30363d;
+    border-radius: 2em;
+    color: #8d96a0;
+    vertical-align: middle;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 2px 10px;
+}
+
+.repo-language{
+    color: #8d96a0;
+    font-weight: 500;
+}
+
+
+/*Contact*/
+
+.head-m-f-container{
+    background: #0d1117;
+    height: max-content;
+}
+.head-m-f-container .contact-content h1{
+    color: white;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.map-form{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* src/components/ContactForm.css */
+.contact-form-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:0px 8px 8px 0px;
+    background: #0d1117;
+    height: 500px;
+    width: 500px;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #8d96a0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #0d1117 !important;
+    color: #b9a7a7;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+    -webkit-text-fill-color: #b9a7a7 !important; 
+    background-color: #0d1117 !important; 
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #1f6feb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0px 8px 8px 0px;
+    background: #0d1117;
+    text-align: center;
+}
+
+.confirmation-message>h2, .confirmation-message>p{
+    color: #8d96a0;
+}
+
+.confirmation-message>button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1f6feb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.confirmation-message button:hover {
+    background-color: #0056b3;
+}
