@@ -6,6 +6,17 @@ This project demonstrates a web application integrating Swiggy's publicly access
 
 
 
+> [!CAUTION]
+> ### 📝 Disclaimer
+> 1. This project is for educational purposes only and does not serve any commercial intent.  
+> 2. The Swiggy API data used here is publicly accessible and is utilized purely to showcase API integration.  
+> 3. Respecting Swiggy's intellectual property, no commercial gain is derived from this project.  
+> 
+> Swiggy is a registered trademark of Bundl Technologies Pvt. Ltd. This project is not endorsed by or affiliated with Swiggy.
+> 
+> *For any concerns regarding the use of data, please contact us.*
+
+
 ## 🌐 API Used
 
 This application integrates with the following APIs to fetch real-time data:
@@ -132,14 +143,4 @@ Before getting started, make sure you have a modern Web browser like Google Chro
   
   <i>Screenshot:</i> ![image](https://github.com/VikeshKumar64/React-Foodie-App/assets/118073983/fa42c232-14ba-47a4-9185-02098f7a1eeb)
 
-
-## 📝 Disclaimer
-
-1) This project is for educational purposes only and does not serve any commercial intent.
-2) The Swiggy API data used here is publicly accessible and is utilized purely to showcase API integration.
-3) Respecting Swiggy's intellectual property, no commercial gain is derived from this project.
-
-Swiggy is a registered trademark of Bundl Technologies Pvt. Ltd. This project is not endorsed by or affiliated with Swiggy.
-
-<i>**For any concerns regarding the use of data, please contact us.**</i>
 
